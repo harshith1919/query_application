@@ -8,7 +8,7 @@ function App() {
     const runQuery = async () => {
         try {
             console.log("Here is the query", query);
-            const response = await axios.post("http://localhost:8000/query", { query });
+            const response = await axios.post("http://34.205.24.189/query", { query });
             setResults(response.data.results);
         } catch (error) {
             console.error("Query failed", error);
