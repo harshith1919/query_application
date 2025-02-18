@@ -14,7 +14,7 @@ client = boto3.client("athena", region_name=AWS_REGION)
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Change this to your frontend domain in production
+    allow_origins=["https://main.d383hwbdqho0dx.amplifyapp.com/"],  # Change this to your frontend domain in production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
